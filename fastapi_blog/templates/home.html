@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% for post in posts %}
+    <h1>Authur {{post.author}} said:</h1>
+    <p> {{post.statement}} </p>
+{% endfor %}
+{% endblock content %}
+
