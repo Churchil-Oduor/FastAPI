@@ -1,4 +1,5 @@
-import cv2
+im
+ort cv2
 import numpy as np
 from fastapi import FastAPI, WebSocket
 import uvicorn
