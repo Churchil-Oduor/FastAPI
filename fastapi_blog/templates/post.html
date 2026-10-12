@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+ <div class="card w-75 mb-3" style="margin-top: 20px; margin-left: 20px;">
+ 		 <div class="card-body">
+			 <div class="d-flex align-items-start gap-3">
+				 <img class="rounded-circle article-img flex-shrink-0" 
+				      src="{{url_for("static", path="profile_pics/default.jpg" )}}"
+				      alt = "{{post.author}}'s profile picture"
+				      width = "64"
+				      height = "64"
+				      loading = "lazy"
+				      >
+
+				      <div>
+				 <div class = "d-flex align-items-start gap-3">
+				 <h5 style="color: #ADD8E6;">{{ post.author }} </h5> 
+				 <h6 class="text-muted"> {{post.date_posted }}</h6>
+				 </div>		 
+			 <h2 class="card-title">{{ post.title }}</h2>
+			 <p class="card-text">{{ post.content }}</p>
+
+		 <button type="button" class="btn-outline theme-primary">Edit</button>
+		 <button type="button" class="btn-outline theme-danger">Delete</button>
+				 </div>
+  		</div>
+	</div>
+ </div>
+{% endblock content %}

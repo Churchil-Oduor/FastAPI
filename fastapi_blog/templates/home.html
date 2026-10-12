@@ -5,7 +5,7 @@
  		 <div class="card-body">
 			 <div class="d-flex align-items-start gap-3">
 				 <img class="rounded-circle article-img flex-shrink-0" 
-				      src="/static/profile_pics/default.jpg"
+				      src="{{url_for("static", path="profile_pics/default.jpg")}}"
 				      alt = "{{post.author}}'s profile picture"
 				      width = "64"
 				      height = "64"
@@ -19,7 +19,7 @@
 				 </div>		 
 			 <h2 class="card-title">{{ post.title }}</h2>
 			 <p class="card-text">{{ post.content }}</p>
-   		 <a href="#" class="btn-solid theme-primary">Read Post</a>
+			 <a href="{{url_for("post_page", post_id=post.id)}}" class="btn-solid theme-primary">Read Post</a>
 				 </div>
   		</div>
 	</div>
