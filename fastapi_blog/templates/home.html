@@ -14,8 +14,8 @@
 
 				      <div>
 				 <div class = "d-flex align-items-start gap-3">
-				 <h5 style="color: #ADD8E6;">{{ post.author }} </h5> 
-				 <h6 class="text-muted"> {{post.date_posted }}</h6>
+				 <h5 style="color: #ADD8E6;">{{ post.author.username }} </h5> 
+				 <h6 class="text-muted"> {{post.date_posted.strftime("%B %d, %Y") }}</h6>
 				 </div>		 
 			 <h2 class="card-title">{{ post.title }}</h2>
 			 <p class="card-text">{{ post.content }}</p>

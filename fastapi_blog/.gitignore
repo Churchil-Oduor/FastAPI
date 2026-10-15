@@ -1,1 +1,3 @@
 .my_venv
+blog.db
+__pycache__/
